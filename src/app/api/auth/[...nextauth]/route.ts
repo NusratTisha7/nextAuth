@@ -19,11 +19,7 @@ export const authOptions: NextAuthOptions = {
       return session;
     },
   },
-  site: process.env.NEXTAUTH_URL,
-  cookie: {
-    secure: process.env.NODE_ENV && process.env.NODE_ENV === "production",
-  },
-  redirect: false,
+  
   providers: [
     FacebookProvider({
       clientId: "653450673362045",
