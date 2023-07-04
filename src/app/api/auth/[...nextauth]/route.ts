@@ -1,11 +1,8 @@
 import NextAuth from "next-auth";
 import type { NextAuthOptions } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
-import {userSignin} from "@/app/axios/authApi"
-import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
 
-export const authOptions: any = {
+export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
